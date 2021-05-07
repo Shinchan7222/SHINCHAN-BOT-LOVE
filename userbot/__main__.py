@@ -51,7 +51,7 @@ for name in files:
 
 import userbot._core
 
-print(f"""ShinchanBOT IS ON!!! SHINCHANBOT VERSION :- {Shinchanversion} YOUR 𝕊ℍ𝕀ℕℂℍ𝔸ℕ IS READY TO USE! FOR CHECK YOUR BOT WORKING OR NOT PLEASE TYPE (.alive/.ping) ENJOY YOUR BOT! JOIN FOR MORE FUTURE UPDATES @Shinchan_USERBOT""")
+print(f"""ShinchanBOT IS ON!!! SHINCHANBOT VERSION :- {shinchanversion} YOUR 𝕊ℍ𝕀ℕℂℍ𝔸ℕ IS READY TO USE! FOR CHECK YOUR BOT WORKING OR NOT PLEASE TYPE (.alive/.ping) ENJOY YOUR BOT! JOIN FOR MORE FUTURE UPDATES @Shinchan_USERBOT""")
 
 if len(argv) not in (1, 3, 4):
     bot.disconnect()

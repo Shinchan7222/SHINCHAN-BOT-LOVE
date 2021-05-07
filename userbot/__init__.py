@@ -9,7 +9,7 @@ from var import Var
 
 
 StartTime = time.time()
-Shinchanversion = "2.0.4"
+shinchanversion = "2.0.4"
 botversion = "0.1"
 
 os.system("pip install --upgrade pip")
@@ -32,7 +32,7 @@ LOAD_PLUG = {}
 # PaperPlaneExtended Support Vars
 ENV = os.environ.get("ENV", False)
 
-Shinchan_ID = ["816517310"]
+shinchan_ID = ["816517310"]
 
 """ PPE initialization. """
 

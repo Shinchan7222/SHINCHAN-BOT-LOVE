@@ -13,7 +13,7 @@ DELETE_TIMEOUT = 5
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Shinchan User"
 shinchan_logo = "./Shinchan/Shinchan_logo.jpg"
 Shinchan = shinchanbot.uid
-shinchan = f"[{DEFAULTUSER}](tg://user?id={shinchan})"
+shinchan = f"[{DEFAULTUSER}](tg://user?id={Shinchan})"
 
 @shinchanbot.on(admin_cmd(pattern=r"send (?P<shortname>\w+)", outgoing=True))
 @shinchanbot.on(sudo_cmd(pattern=r"send (?P<shortname>\w+)", allow_sudo=True))

@@ -54,7 +54,7 @@ pm_caption += "😇CHANNEL😇️   : [ᴊᴏɪɴ](https://t.me/Shinchan_USERBOT
 
 pm_caption += "😎CREATOR😎    : [Shinchan](https://t.me/Shinchan7222)\n\n"
 
-pm_caption += "🤩SUPPORTER🤩    :[HIMANSHU](https://t.me/H1M4N5HU0P\n\n"
+pm_caption += "🤩SUPPORTER🤩    :[HIMANSHU](https://t.me/H1M4N5HU0P)\n\n"
 
 pm_caption += "      [🔥REPO🔥](https://github.com/Shinchan7222/ShinchanOP) 🔹 [📜License📜](https://github.com/Shinchan7222/ShinchanOP/blob/main/LICENSE)"
 

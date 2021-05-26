@@ -2,7 +2,7 @@
 # porting to hellbot by @kraken_the_badass...
 # i asked rekcah before porting...not like other kangers....
 # keep credit if u wanna kang...
-# Now in mafiaBot
+# Now in shinchanBot
 # else u are a gay...no doubt in that....
 
 # --------------------------------------------------------------------------------------------------------------------------------
@@ -17,7 +17,7 @@ from telethon.tl.functions.channels import GetFullChannelRequest
 from telethon.tl.functions.messages import GetFullChatRequest
 
 from userbot import CMD_HELP
-from mafiabot.utils import admin_cmd, edit_or_reply, sudo_cmd
+from shinchanbot.utils import admin_cmd, edit_or_reply, sudo_cmd
 from userbot.cmdhelp import CmdHelp
 
 async def get_chatinfo(event):
@@ -70,35 +70,35 @@ async def get_users(event):
     sender = await event.get_sender()
     me = await event.client.get_me()
     if not sender.id == me.id:
-        mafia = await edit_or_reply(event, "`processing...`")
+        shinchan = await edit_or_reply(event, "`processing...`")
     else:
-        mafia = await edit_or_reply(event, "`processing...`")
+        shinchan = await edit_or_reply(event, "`processing...`")
     kraken = await get_chatinfo(event)
     chat = await event.get_chat()
     if event.is_private:
-        return await mafia.edit("`Sorry, Cant kidnape users here`")
+        return await shinchan.edit("`Sorry, Cant kidnape users here`")
     s = 0
     f = 0
     error = "None"
 
-    await mafia.edit("**TerminalStatus**\n\n`kidnapeing Users.......`")
+    await shinchan.edit("**TerminalStatus**\n\n`kidnapeing Users.......`")
     async for user in event.client.iter_participants(kraken.full_chat.id):
         try:
             if error.startswith("Too"):
-                return await mafia.edit(
+                return await shinchan.edit(
                     f"**Terminal Finished With Error**\n(`May Got Limit Error from telethon Please try agin Later`)\n**Error** : \n`{error}`\n\n• kidnaped `{s}` people \n• Failed to kidnape `{f}` people"
                 )
             await event.client(
                 functions.channels.InviteToChannelRequest(channel=chat, users=[user.id])
             )
             s = s + 1
-            await mafia.edit(
+            await shinchan.edit(
                 f"**Terminal Running...**\n\n• Invited `{s}` people \n• Failed to Invite `{f}` people\n\n**× LastError:** `{error}`"
             )
         except Exception as e:
             error = str(e)
             f = f + 1
-    return await mafia.edit(
+    return await shinchan.edit(
         f"**Terminal Finished** \n\n• Successfully kidnaped `{s}` people \n• failed to kidnape `{f}` people"
     )
 
